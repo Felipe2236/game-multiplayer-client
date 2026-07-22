@@ -5,7 +5,7 @@ var ultima_posicion_enviada := Vector2.ZERO
 
 # Control de Tiempo (Tick Rate)
 var tiempo_acumulado := 0.0
-var intervalo_envio := 0.01 # 0.05s = 20 paquetes por segundo
+var intervalo_envio := 0.00 # 0.05s = 20 paquetes por segundo
 
 func _process(delta):
 	# Si NO somos Mario en esta ventana, ignoramos la entrada de teclas

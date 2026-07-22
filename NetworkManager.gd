@@ -1,7 +1,7 @@
 extends Node
 
 var socket = WebSocketPeer.new()
-var websocket_url = "ws://localhost:8080"
+var websocket_url = "wss://game-multiplayer-server.onrender.com"
 
 @onready var mi_jugador = $MiJugador
 @onready var otro_jugador = $OtroJugador
