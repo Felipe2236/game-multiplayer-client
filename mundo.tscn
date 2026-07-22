@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dkgfhgq2flnk"]
+
+[ext_resource type="Script" uid="uid://cjinfb7i58y6j" path="res://NetworkManager.gd" id="1_6ba58"]
+[ext_resource type="Script" uid="uid://c6mat8m3j3jhr" path="res://mi_jugador.gd" id="2_lgngo"]
+[ext_resource type="Texture2D" uid="uid://co7ot1usuoau4" path="res://mario.png" id="3_aou4a"]
+[ext_resource type="Script" uid="uid://bxm8lkgycm61y" path="res://otro_jugador.gd" id="3_fw4w5"]
+[ext_resource type="Texture2D" uid="uid://c6cmpc4uy2ldf" path="res://luigi.png" id="5_5ckkb"]
+
+[node name="Mundo" type="Node2D" unique_id=510507783]
+script = ExtResource("1_6ba58")
+
+[node name="MiJugador" type="CharacterBody2D" parent="." unique_id=1011203381]
+script = ExtResource("2_lgngo")
+
+[node name="Sprite2D" type="Sprite2D" parent="MiJugador" unique_id=314509277]
+position = Vector2(133, 113)
+texture = ExtResource("3_aou4a")
+
+[node name="OtroJugador" type="CharacterBody2D" parent="." unique_id=332473620]
+script = ExtResource("3_fw4w5")
+
+[node name="Sprite2D" type="Sprite2D" parent="OtroJugador" unique_id=1824971217]
+position = Vector2(244, 114)
+texture = ExtResource("5_5ckkb")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=128277266]
+position = Vector2(190, 113)
+zoom = Vector2(3, 3)
